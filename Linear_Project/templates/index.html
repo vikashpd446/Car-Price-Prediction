@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+
+</head>
+<body>
+    
+    
+    <h1 class="ani">Car Dekho</h1>
+
+    <h1 class="Heading">Car Price Prediction</h1>
+    <div>
+
+        <form action="/predict" method="POST">
+
+            <lable for='mileage'>Mileage: </lable>
+            <input type="number" name="mileage" id="mileage" placeholder="mileage">
+            <lable for='age_yrs'>Age of Car: </lable>
+            <input type="number" name="age_yrs" id="age_yrs" placeholder="age_yrs">
+            <input type="submit" value="Predict">
+
+
+
+        </form>
+        
+        <br>
+        <br>
+
+    </div>
+    
+    
+    <style>
+    
+        body {
+
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body * {
+    box-sizing: border-box;
+  }
+
+.Heading {
+
+    background: red;
+    text-align: center;
+    box-shadow: 0 0 50px; color: white;
+    border-radius: 10px;
+    margin: 70px;
+    border: 5px solid blue;
+}
+
+lable {
+
+    font-family: cambria;
+    color: blue;
+    font-weight: bold;
+    
+
+}
+
+form {
+
+    text-align: center;
+}
+
+
+input {
+
+    font-family: cambria;
+    color: solid black;
+    font-weight: bold;
+    margin: 20px;
+    background: aqua;
+    padding:10px;
+
+}
+
+.ani {
+    width: 160px;
+    height: 40px;
+    background-color: red;
+    box-shadow: 0 0 50px; color: white;
+    border-radius: 10px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    border: 2px solid black;
+    animation-iteration-count: 100;
+    
+}
+
+@keyframes anime {
+
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 1180px; top: 0px;}
+    50% {background-color: green; left: 1180px; top: 570px;}
+    70% {background-color: blue; left: 0px; top: 570px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+
+
+}
+
+    
+    
+    </style>
+
+
+</body>
+</html>
